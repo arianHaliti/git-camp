@@ -18,7 +18,7 @@ import javax.swing.event.ListSelectionListener;
 
 /**
  *
- * @author XONI
+ * @author Arian
  */
 public class ResultsStudent extends javax.swing.JInternalFrame {
     StudentTestModel stm = new StudentTestModel();
