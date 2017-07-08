@@ -5,7 +5,7 @@ import DAL.UserRepository;
 import javax.swing.JOptionPane;
 /*
  * Created By Arian Halit
- *
+ * Team of 4 members
  */
 public class LoginGUI extends javax.swing.JFrame {
     UserRepository ur = new UserRepository();
