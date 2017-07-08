@@ -3,7 +3,10 @@ package GUI;
 import BL.Users;
 import DAL.UserRepository;
 import javax.swing.JOptionPane;
-
+/*
+ * Created By Arian Halit
+ *
+ */
 public class LoginGUI extends javax.swing.JFrame {
     UserRepository ur = new UserRepository();
     public Users item;
