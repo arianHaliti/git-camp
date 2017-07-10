@@ -65,9 +65,9 @@ public class TestCreatorForm extends javax.swing.JInternalFrame {
         testTable.clearSelection();
         test_name_field.setText("");
         test_desc_field.setText("");
-//        points_field.setText("");
+
         duration_field.setText("");
-  //      points_field.setText("");
+
         drejtimi_combo.setSelectedIndex(0);
     }
     
@@ -126,7 +126,7 @@ public class TestCreatorForm extends javax.swing.JInternalFrame {
                     
                     test_name_field.setText(testi.getTestName());
                     duration_field.setText(testi.getDuration() + "");
-//                    points_field.setText(testi.getPoints()+ "");
+
                     edit_btn.setVisible(true);
                     drejtimi_combo.setSelectedItem(testi.getProgramSubjectID().getProgramID().getProgramName());
                     subject_combo.setSelectedItem(testi.getProgramSubjectID().getProfesorSubjectID().getSubjectID().getSubjectName());
@@ -482,9 +482,7 @@ public class TestCreatorForm extends javax.swing.JInternalFrame {
                         testi.setDescriptions(test_desc_field1.getText());
                     else
                         testi.setDescriptions(test_desc_field.getText());
-//                    System.out.println(subjectList.get(lendaCombo.getSelectedIndex()));
-//                    System.out.println((ppr.findByProfesorAndSubject(subjectList.get(lendaCombo.getSelectedIndex()),p.getProfesorID())).getProgramSubjectID()+"SSSSSSs");
-                    
+         
                     testiRepository.create(testi);
                      int res =JOptionPane.showConfirmDialog(null,
 "Testi u ruajt me sukses ,Deshironi te mbushni Testin e krijuar?",null, JOptionPane.YES_NO_OPTION);
@@ -497,9 +495,9 @@ public class TestCreatorForm extends javax.swing.JInternalFrame {
                     Test testi = this.testiTableModel.getTesti(row);
                     
                     testi.setTestName(test_name_field.getText());
-                //    testi.setNrQuestions(Integer.parseInt(nr_quest_field.getText()));
+            
                     testi.setDuration(Integer.parseInt(duration_field.getText()));
-                   // testi.setPoints(Integer.parseInt(points_field.getText()));
+                
                     if(jRadioButton1.isSelected())
                         testi.setDescriptions(test_desc_field1.getText());
                     else
