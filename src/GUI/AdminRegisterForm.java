@@ -32,14 +32,11 @@ public class AdminRegisterForm extends javax.swing.JInternalFrame {
     /**
      * Creates new form StudentGUI
      */
-    public AdminRegisterForm(MainForm mf) {
+    public AdminRegisterForm() {
         initComponents();
         tableLoad();
-         Dimension desktopSize = mf.getSize();
-        Dimension jInternalFrameSize = this.getSize();
-        this.setLocation((desktopSize.width - jInternalFrameSize.width)/2,
-        (10));
-        //this.setLocation(150,5);
+        
+        this.setLocation(150,5);
     }
 
     /**
@@ -437,7 +434,7 @@ public class AdminRegisterForm extends javax.swing.JInternalFrame {
      public boolean errorCheck(){
         
         String pattern ="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,}";// Strong password
-        //String number =".*\\d+.*";//A osht numer
+        
         String letters = "[a-zA-Z-Ç-ç]+?"; // a osht fjal
 
           if (first_name_field.getText().equals("") || !first_name_field.getText().matches(letters)) {
