@@ -36,7 +36,7 @@ public class AdminRegisterForm extends javax.swing.JInternalFrame {
         initComponents();
         tableLoad();
         
-        this.setLocation(150,5);
+        this.setLocation(150,15);
     }
 
     /**
