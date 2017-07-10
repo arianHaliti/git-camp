@@ -823,26 +823,7 @@ public void answers(Questions q,int row,int nrOptions){
         
     }
     
-    private ArrayList<Boolean> getCorrectAnswers(){
-        ArrayList<Boolean> temp = new ArrayList<>();
-        temp.add(jRadioButton1.isSelected());
-        temp.add(jRadioButton2.isSelected());
-        if(nrQuest==2)return temp;
-        temp.add(jRadioButton3.isSelected());
-        if(nrQuest==3)return temp;
-        temp.add(jRadioButton4.isSelected());
-        return temp;
-    }
-    private ArrayList<String> getQuestionDescs(){
-        ArrayList<String> temp = new ArrayList<>();
-        temp.add(firstQuestion_field.getText());
-        temp.add(secondQuestion_field.getText());
-        if(nrQuest==2)return temp;
-        temp.add(thirdQuestion_field.getText());
-        if(nrQuest==3)return temp;
-        temp.add(fourthQuestion_field.getText());
-        return temp;
-    }
+   
     private void changeQuestions(){
          
          switch(nrQuest){

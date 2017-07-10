@@ -65,7 +65,7 @@ public class TestCreatorForm extends javax.swing.JInternalFrame {
         testTable.clearSelection();
         test_name_field.setText("");
         test_desc_field.setText("");
-
+        System.out.println(test_desc_field.getText());
         duration_field.setText("");
 
         drejtimi_combo.setSelectedIndex(0);
