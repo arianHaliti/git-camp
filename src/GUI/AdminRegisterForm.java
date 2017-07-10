@@ -22,7 +22,7 @@ import javax.swing.event.ListSelectionListener;
 
 /**
  *
- * @author XONI
+ * @author Arian Halit
  */
 public class AdminRegisterForm extends javax.swing.JInternalFrame {
     UserTableModel utm = new UserTableModel();
@@ -36,7 +36,7 @@ public class AdminRegisterForm extends javax.swing.JInternalFrame {
         initComponents();
         tableLoad();
         
-        this.setLocation(150,15);
+        this.setLocation(200,20);
     }
 
     /**
@@ -76,7 +76,7 @@ public class AdminRegisterForm extends javax.swing.JInternalFrame {
                     password_field.setText(u.getHashCode());
                     moreInfo_btn.setVisible(true);
                     
-                    delete_btn.setVisible(true);
+                    delete_btn.setVisible(false);
                     user = u;
                 }
             }
