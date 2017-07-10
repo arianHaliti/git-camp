@@ -313,7 +313,7 @@ remove();
     }
     private void admin_menuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_admin_menuActionPerformed
         remove();
-        AdminRegisterForm arf = new AdminRegisterForm(this);
+        AdminRegisterForm arf = new AdminRegisterForm();
         jDesktopPane1.add(arf);
         arf.show();
     }//GEN-LAST:event_admin_menuActionPerformed
