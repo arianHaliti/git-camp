@@ -30,7 +30,7 @@ import java.awt.event.ActionEvent;
 import javax.swing.JOptionPane;
 /**
  *
- * @author XONI
+ * @author Arian , Xoni
  */
 public class TestOpened extends javax.swing.JInternalFrame {
     Test t;
